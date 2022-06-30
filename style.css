@@ -1,0 +1,74 @@
+/*
+ * ────────────────────────────────────────────────────────────────────────── I ──────────
+ *   :::::: E S T I L O S   G E N E R A L E S : :  :   :    :     :        :          :
+ * ────────────────────────────────────────────────────────────────────────────────────
+ */
+ * {
+    font-family: "Montserrat", sans-serif !important;
+  }
+.tx-primary{
+    color: #B49C73!important;
+}
+.active{
+    color: #B49C73!important;
+}
+.btn{
+    font-weight: 600!important;
+}
+.btn-primary{
+   color: black!important;
+    background-color: #B49C73!important;
+	border-color: #B49C73!important;
+    
+}
+.btn-outline-primary{
+    border-color: #917d5b!important;
+}
+.btn-outline-primary:hover{
+    color: black!important;
+    background-color: #917d5b!important;
+	border-color: #917d5b!important;
+
+}
+.btn-primary:hover{
+    color: white!important;
+    background-color: #917d5b!important;
+	border-color: #917d5b!important;
+}
+
+.nav-link{
+    font-weight: 600!important;
+}
+a{
+    color: black!important;
+}
+.nav-link:hover{
+    color: #B49C73!important;
+}
+
+/*
+ * ────────────────────────────────────────────────────────────────── ESTILOS ─────
+ */
+
+    
+/*
+ * ──────────────────────────────────────────────────── I I ──────────
+ *   :::::: H E A D E R : :  :   :    :     :        :          :
+ * ──────────────────────────────────────────────────────────────
+ */
+.nav-brand{
+    border: 0!important;
+    font-size: 4rem;
+    font-weight: 700!important
+}
+
+
+
+
+
+
+ /*
+  * ─────────────────────────────────────────────────────────────────── HEADER ─────
+  */
+
+     
