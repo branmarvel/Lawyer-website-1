@@ -3,151 +3,294 @@
  *   :::::: E S T I L O S   G E N E R A L E S : :  :   :    :     :        :          :
  * ────────────────────────────────────────────────────────────────────────────────────
  */
- * {
-    font-family: "Montserrat", sans-serif !important;
-  }
-.tx-primary{
-    color: #B49C73!important;
+body {
+  margin: 0;
 }
-.active{
-    color: #B49C73!important;
+html {
+  box-sizing: border-box;
 }
-.btn{
-    font-weight: 600!important;
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
-.btn-primary{
-   color: black!important;
-    background-color: #B49C73!important;
-	border-color: #B49C73!important;
-    
+* {
+  font-family: "Roboto", sans-serif !important;
 }
-.btn-outline-primary{
-    border-color: #917d5b!important;
-}
-.btn-outline-primary:hover{
-    color: black!important;
-    background-color: #917d5b!important;
-	border-color: #917d5b!important;
-
-}
-.btn-primary:hover{
-    color: white!important;
-    background-color: #917d5b!important;
-	border-color: #917d5b!important;
+.tx-primary {
+  color: #b49c73 !important;
 }
 
-.nav-link{
-    font-weight: 600!important;
+.active {
+  color: #b49c73 !important;
 }
-a{
-    color: black!important;
+.btn {
+  font-weight: 600 !important;
 }
-.nav-link:hover{
-    color: #B49C73!important;
+.btn-primary {
+  color: black !important;
+  background-color: #b49c73 !important;
+  border-color: #b49c73 !important;
+}
+.btn-outline-primary {
+  border-color: #917d5b !important;
+}
+.rounded-1 {
+  border-radius: 6px !important;
+}
+.btn-outline-primary:hover {
+  color: black !important;
+  background-color: #917d5b !important;
+  border-color: #917d5b !important;
+}
+.btn-primary:hover {
+  color: white !important;
+  background-color: #917d5b !important;
+  border-color: #917d5b !important;
+}
+
+.nav-link {
+  font-weight: 600 !important;
+}
+a {
+  color: black !important;
+}
+.nav-link:hover {
+  color: #b49c73 !important;
 }
 
 /*
  * ────────────────────────────────────────────────────────────────── ESTILOS ─────
  */
 
-    
 /*
  * ──────────────────────────────────────────────────── I I ──────────
  *   :::::: H E A D E R : :  :   :    :     :        :          :
  * ──────────────────────────────────────────────────────────────
  */
-.nav-brand{
-    border: 0!important;
-    font-size: 4rem;
-    font-weight: 700!important
+.nav-brand {
+  border: 0 !important;
+  font-size: 4rem;
+  font-weight: 600 !important;
 }
-.navbar-toggler-icon{
-  color: #917d5b!important;
+.navbar-toggler-icon {
+  color: #917d5b !important;
 }
 
 .bg-carousel {
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 82vh;
+  position: relative;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 82vh;
 }
-.text-carousel{
+.bg-carousel::after {
+  position: absolute;
+  content: "";
+  z-index: 1;
+  top: 0;
+  pointer-events: none;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.bg-carousel-2 {
+  z-index: 100;
+}
+.text-carousel {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   color: #fff;
+}
+.h1 {
+  font-weight: 800 !important;
+  letter-spacing: 1px;
+}
 
-}
-.h1{
-  font-weight: 800!important;
-  font-size: 6rem!important;
-}
+/*
+ * ─── KEEN SLIDER 1 CSS ──────────────────────────────────────────────────────────
+ */
 
 .navigation-wrapper {
-    position: relative;
-  }
-  
-  .dots {
-    display: flex;
-    padding: 10px 0;
-    justify-content: center;
-  }
-  
-  .dot {
-    border: none;
-    width: 10px;
-    height: 10px;
-    background: #c5c5c5;
-    border-radius: 50%;
-    margin: 0 5px;
-    padding: 5px;
-    cursor: pointer;
-  }
-  
-  .dot:focus {
-    outline: none;
-  }
-  
-  .dot--active {
-    background: #000;
-  }
-  
-  .arrow {
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    fill: #fff;
-    cursor: pointer;
-  }
-  
-  .arrow--left {
-    left: 5px;
-    fill: "#fff";
-    background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' %3E%3Cpath d='M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z' %3E%3C/path%3E%3C/svg%3E");
-  }
-  
-  .arrow--right {
-    left: auto;
-    right: 5px;
-    background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' %3E%3Cpath d='M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z'%3E%3C/path%3E%3C/svg%3E");
-  }
-  
-  .arrow--disabled.arrow--left {
-    background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' fill='grey' viewBox='0 0 24 24' %3E%3Cpath d='M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z' %3E%3C/path%3E%3C/svg%3E");
-  }
-  
-  .arrow--disabled.arrow--right {
-    background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' fill='grey' viewBox='0 0 24 24' %3E%3Cpath d='M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z'%3E%3C/path%3E%3C/svg%3E");
-  }
+  position: relative;
+}
 
+.dots {
+  display: flex;
+  padding: 10px 0;
+  justify-content: center;
+}
 
+.dot {
+  border: none;
+  width: 10px;
+  height: 10px;
+  background: #c5c5c5;
+  border-radius: 50%;
+  margin: 0 5px;
+  padding: 5px;
+  cursor: pointer;
+}
 
- /*
+.dot:focus {
+  outline: none;
+}
+
+.dot--active {
+  background: #000;
+}
+
+.arrow {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  fill: #fff;
+  cursor: pointer;
+}
+
+.arrow--left {
+  left: 5px;
+  fill: "#fff";
+  background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' %3E%3Cpath d='M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z' %3E%3C/path%3E%3C/svg%3E");
+}
+
+.arrow--right {
+  left: auto;
+  right: 5px;
+  background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' %3E%3Cpath d='M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+.arrow--disabled.arrow--left {
+  background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' fill='grey' viewBox='0 0 24 24' %3E%3Cpath d='M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z' %3E%3C/path%3E%3C/svg%3E");
+}
+
+.arrow--disabled.arrow--right {
+  background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' fill='grey' viewBox='0 0 24 24' %3E%3Cpath d='M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+/*
+ * ──────────────────────────────────────────────────────── KEEN SLIDER 1 CSS ─────
+ */
+
+/*
   * ─────────────────────────────────────────────────────────────────── HEADER ─────
   */
 
-     
+/*
+ * ────────────────────────────────────────────────── III ──────────
+ *   :::::: A B O U T : :  :   :    :     :        :          :
+ * ────────────────────────────────────────────────────────────
+ */
+
+.trans-about {
+  transform: translateX(-40%);
+}
+
+/*
+  * ──────────────────────────────────────────────────────────────────── ABOUT ─────
+  */
+
+/*
+   * ────────────────────────────────────────────────────────── IV ──────────
+   *   :::::: P R A C T I C E S : :  :   :    :     :        :          :
+   * ────────────────────────────────────────────────────────────────────
+   */
+/*
+ * ─── KEEN SLIDER 2 CSS ──────────────────────────────────────────────────────────
+ */
+#my-keen-slider-2 {
+  transform: translateY(-30%) scaleX(0.9);
+}
+.navigation-wrapper-2 {
+  position: relative;
+}
+
+.dots-2 {
+  display: flex;
+  padding: 10px 0;
+  justify-content: center;
+}
+
+.dot-2 {
+  border: none;
+  width: 10px;
+  height: 10px;
+  background: #c5c5c5;
+  border-radius: 50%;
+  margin: 0 5px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.dot:focus {
+  outline: none;
+}
+
+.dot--active-2 {
+  background: #000;
+}
+
+.arrow-2 {
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  top: -40%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  fill: #fff;
+  cursor: pointer;
+  fill: rgb(144, 124, 90);
+}
+
+.arrow--left-2 {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: #343a40;
+  border-radius: 5px !important;
+  left: 42%;
+  background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' fill='rgb(144, 124, 90)' viewBox='0 0 24 24' %3E%3Cpath d='M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z' %3E%3C/path%3E%3C/svg%3E");
+}
+
+.arrow--right-2 {
+  display: block;
+  padding: 1rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px !important;
+  background-color: #343a40;
+  left: auto;
+  right: 42%;
+  background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' fill='rgb(144, 124, 90)' viewBox='0 0 24 24' %3E%3Cpath d='M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+.arrow--disabled-2.arrow--left-2 {
+  background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' fill='rgb(144, 124, 90)' viewBox='0 0 24 24' %3E%3Cpath d='M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z' %3E%3C/path%3E%3C/svg%3E");
+}
+
+.arrow--disabled-2.arrow--right-2 {
+  background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' fill='rgb(144, 124, 90)' viewBox='0 0 24 24' %3E%3Cpath d='M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+/*
+ * ──────────────────────────────────────────────────────── KEEN SLIDER 2 CSS ─────
+ */
+/*
+    * ───────────────────────────────────────────────────────────────── PRACTICE ─────
+    */
+
+/*
+   * ──────────────────────────────────────────────────────────── X ──────────
+   *   :::::: R E S P O N S I V E : :  :   :    :     :        :          :
+   * ──────────────────────────────────────────────────────────────────────
+   */
+
+/*
+    * ─────────────────────────────────────────────────────────────── RESPONSIVE ─────
+    */
