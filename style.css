@@ -59,6 +59,25 @@ a {
   color: #b49c73 !important;
 }
 
+.bg-img {
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 50vh;
+}
+.bg-img::afte {
+  position: absolute;
+  content: "";
+  z-index: 1;
+  top: 0;
+  pointer-events: none;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(73, 60, 60, 0.4);
+}
+
 /*
  * ────────────────────────────────────────────────────────────────── ESTILOS ─────
  */
@@ -282,14 +301,74 @@ a {
  * ──────────────────────────────────────────────────────── KEEN SLIDER 2 CSS ─────
  */
 /*
-    * ───────────────────────────────────────────────────────────────── PRACTICE ─────
-    */
+*/
+/*
+ * ──────────────────────────────────────────────── V ──────────
+ *   :::::: T E A M : :  :   :    :     :        :          :
+ * ──────────────────────────────────────────────────────────
+ */
+
+.team-img {
+  min-height: 30vh;
+}
+
+#my-keen-slider-3 {
+  transform: translateY(-40%);
+}
+.arrow-3 {
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  top: -50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  fill: #fff;
+  cursor: pointer;
+  fill: rgb(144, 124, 90);
+}
+
+.arrow--left-3 {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: #343a40;
+  border-radius: 5px !important;
+  left: 42%;
+  background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' fill='rgb(144, 124, 90)' viewBox='0 0 24 24' %3E%3Cpath d='M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z' %3E%3C/path%3E%3C/svg%3E");
+}
+
+.arrow--right-3 {
+  display: block;
+  padding: 1rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px !important;
+  background-color: #343a40;
+  left: auto;
+  right: 42%;
+  background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' fill='rgb(144, 124, 90)' viewBox='0 0 24 24' %3E%3Cpath d='M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+.arrow--disabled-3.arrow--left-3 {
+  background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' fill='rgb(144, 124, 90)' viewBox='0 0 24 24' %3E%3Cpath d='M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z' %3E%3C/path%3E%3C/svg%3E");
+}
+
+.arrow--disabled-3.arrow--right-3 {
+  background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' fill='rgb(144, 124, 90)' viewBox='0 0 24 24' %3E%3Cpath d='M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z'%3E%3C/path%3E%3C/svg%3E");
+}
 
 /*
+
    * ──────────────────────────────────────────────────────────── X ──────────
    *   :::::: R E S P O N S I V E : :  :   :    :     :        :          :
    * ──────────────────────────────────────────────────────────────────────
    */
+
+@media screen and (max-width: 992px) {
+  .trans-about {
+    transform: translateX(0%);
+  }
+}
 
 /*
     * ─────────────────────────────────────────────────────────────── RESPONSIVE ─────
