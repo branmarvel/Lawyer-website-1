@@ -318,10 +318,19 @@ var slider = new KeenSlider(
 var slider = new KeenSlider(
   "#my-keen-slider-2",
   {
-    slides: {
-      perView: 3,
-      spacing: 25,
-      slides: { perView: "auto" },
+    breakpoints: {
+      "(min-width: 400px)": {
+        loop: true,
+        slides: { perView: 1, spacing: 10 },
+      },
+      "(min-width: 768px)": {
+        loop: true,
+        slides: { perView: 2, spacing: 20 },
+      },
+      "(min-width: 1000px)": {
+        loop: true,
+        slides: { perView: 3, spacing: 20 },
+      },
     },
     loop: true,
     rtl: false,
@@ -365,10 +374,25 @@ var slider = new KeenSlider(
 var slider = new KeenSlider(
   "#my-keen-slider-3",
   {
-    slides: {
-      perView: 4,
-      spacing: 20,
+    breakpoints: {
+      "(min-width: 400px)": {
+        loop: true,
+        slides: { perView: 1, spacing: 10 },
+      },
+      "(min-width: 576px)": {
+        loop: true,
+        slides: { perView: 2, spacing: 20 },
+      },
+      "(min-width: 768px)": {
+        loop: true,
+        slides: { perView: 3, spacing: 20 },
+      },
+      "(min-width: 1000px)": {
+        loop: true,
+        slides: { perView: 4, spacing: 20 },
+      },
     },
+
     loop: true,
     rtl: false,
     mode: "snap",
