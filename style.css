@@ -342,6 +342,9 @@ a {
 .team-social:hover {
   opacity: 1;
 }
+.bg-slider {
+  min-height: 20vh;
+}
 .dots {
   display: none;
 }
@@ -403,9 +406,7 @@ a {
   .trans-about {
     transform: translateX(0%);
   }
-}
 
-@media screen and (max-width: 992px) {
   .arrow-3 {
     width: 30px;
     height: 30px;
@@ -435,6 +436,14 @@ a {
 
   .arrow--disabled-3.arrow--right-3 {
     background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' fill='rgb(144, 124, 90)' viewBox='0 0 24 24' %3E%3Cpath d='M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z'%3E%3C/path%3E%3C/svg%3E");
+  }
+}
+@media screen and (max-width: 576px) {
+  #my-keen-slider-3 {
+    transform: translateY(0%);
+  }
+  .bg-slider {
+    min-height: 10vh;
   }
 }
 /*
