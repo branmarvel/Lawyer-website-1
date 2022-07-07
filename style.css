@@ -77,6 +77,9 @@ a {
   bottom: 0;
   background-color: rgba(56, 52, 60, 0.6);
 }
+.bg-dark-light {
+  background-color: #48444c;
+}
 
 .form-1 {
   position: absolute;
@@ -349,7 +352,7 @@ a {
   display: none;
 }
 #my-keen-slider-3 {
-  transform: translateY(-40%);
+  transform: translateY(-30%) scaleX(0.9);
 }
 .arrow-3 {
   width: 5px;
@@ -370,7 +373,7 @@ a {
   height: 40px;
   background-color: #343a40;
   border-radius: 5px !important;
-  left: 40%;
+  left: 45%;
   right: auto;
   background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' fill='rgb(144, 124, 90)' viewBox='0 0 24 24' %3E%3Cpath d='M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z' %3E%3C/path%3E%3C/svg%3E");
 }
@@ -383,7 +386,7 @@ a {
   border-radius: 5px !important;
   background-color: #343a40;
   left: auto;
-  right: 40%;
+  right: 45%;
   background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' fill='rgb(144, 124, 90)' viewBox='0 0 24 24' %3E%3Cpath d='M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z'%3E%3C/path%3E%3C/svg%3E");
 }
 
@@ -396,7 +399,76 @@ a {
 }
 
 /*
+ * ───────────────────────────────────────────────────────────────────── Team ─────
+/*
 
+
+/*
+ * ──────────────────────────────────────────────────────────────── VI ──────────
+ *   :::::: T E S T I M O N I A L S : :  :   :    :     :        :          :
+ * ──────────────────────────────────────────────────────────────────────────
+ */
+
+/* ─── Keen Slider ────────────────────────────────────────────────────────────────*/
+
+.testimonial::after {
+  position: absolute;
+  content: "";
+  bottom: -18%;
+  left: 15%;
+  border: 15px solid;
+  border-color: #343a40 transparent transparent transparent;
+  z-index: 9999;
+}
+
+.navigation-wrapper {
+  position: relative;
+}
+
+.dots-4 {
+  display: flex;
+  padding: 10px 0;
+  justify-content: center;
+  position: absolute;
+  top: -25%;
+  left: 43%;
+}
+
+.dot-4 {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  background: #b49c73;
+  border-radius: 50%;
+  margin: 0 7px;
+  padding: 7px;
+  cursor: pointer;
+}
+.dot-4::after {
+  position: absolute;
+  content: "";
+  top: -5px;
+  left: -5px;
+  right: 0;
+  bottom: 0;
+  padding: 10px;
+  border: 2px solid #b49c73;
+  border-radius: 20px;
+}
+
+.dot:focus {
+  outline: none;
+}
+
+.dot--active-4 {
+  background: #000;
+}
+
+/*
+ ───────────────────────────────────────────────────────────── Testimonials ─────
+*/
+
+/*
    * ──────────────────────────────────────────────────────────── X ──────────
    *   :::::: R E S P O N S I V E : :  :   :    :     :        :          :
    * ──────────────────────────────────────────────────────────────────────
@@ -411,7 +483,7 @@ a {
     width: 30px;
     height: 30px;
     position: absolute;
-    top: 0%;
+    top: -50%;
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     fill: #fff;
@@ -419,14 +491,14 @@ a {
   }
 
   .arrow--left-3 {
-    left: 5px;
-    fill: "#fff";
+    left: 42%;
+    right: auto;
     background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' fill='rgb(144, 124, 90)' viewBox='0 0 24 24' %3E%3Cpath d='M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z' %3E%3C/path%3E%3C/svg%3E");
   }
 
   .arrow--right-3 {
     left: auto;
-    right: 5px;
+    right: 42%;
     background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' fill='rgb(144, 124, 90)' viewBox='0 0 24 24' %3E%3Cpath d='M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z'%3E%3C/path%3E%3C/svg%3E");
   }
 
@@ -440,10 +512,56 @@ a {
 }
 @media screen and (max-width: 576px) {
   #my-keen-slider-3 {
-    transform: translateY(0%);
+    transform: translateY(-30%) scaleX(0.9);
+  }
+  .dots-4 {
+    left: 36%;
   }
   .bg-slider {
-    min-height: 10vh;
+    min-height: 30vh !important;
+  }
+  .arrow-3 {
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    top: -40%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: scale(1);
+    fill: #fff;
+    cursor: pointer;
+    fill: rgb(144, 124, 90);
+  }
+
+  .arrow--left-3 {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: #343a40;
+    border-radius: 5px !important;
+    left: 39%;
+    right: auto;
+    background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' fill='rgb(144, 124, 90)' viewBox='0 0 24 24' %3E%3Cpath d='M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z' %3E%3C/path%3E%3C/svg%3E");
+  }
+
+  .arrow--right-3 {
+    display: block;
+    padding: 1rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px !important;
+    background-color: #343a40;
+    left: auto;
+    right: 39%;
+    background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' fill='rgb(144, 124, 90)' viewBox='0 0 24 24' %3E%3Cpath d='M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z'%3E%3C/path%3E%3C/svg%3E");
+  }
+
+  .arrow--disabled-3.arrow--left-3 {
+    background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' fill='rgb(144, 124, 90)' viewBox='0 0 24 24' %3E%3Cpath d='M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z' %3E%3C/path%3E%3C/svg%3E");
+  }
+
+  .arrow--disabled-3.arrow--right-3 {
+    background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' fill='rgb(144, 124, 90)' viewBox='0 0 24 24' %3E%3Cpath d='M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z'%3E%3C/path%3E%3C/svg%3E");
   }
 }
 /*
