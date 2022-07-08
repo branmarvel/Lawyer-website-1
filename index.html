@@ -31,7 +31,7 @@
 </head>
 
 <body>
-    <header class="container-fluid">
+    <header class="container-fluid" id="header">
 
         <div class="row">
             <div class="col-lg-3 bg-dark  d-none d-lg-block">
@@ -43,28 +43,33 @@
             <div class="col-lg-9 ">
                 <div class="d-none d-lg-block">
                     <div class="row ">
-                        <div class="col-9 pt-2 d-flex align-content-center">
+                        <div class="col-10 pt-2 d-flex align-content-center">
                             <div class="d-flex  p-2">
-                                <div class="tx-primary px-2"><i class="fa fa-envelope" aria-hidden="true"></i></div>
-                                <div class="">
+                                <div class="tx-primary  px-2"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                                <div class="text-secondary font-weight-light">
                                     info@example.com
                                 </div>
                             </div>
                             <div class="d-flex p-2">
                                 <div class="tx-primary px-2"> <i class="fa fa-phone" aria-hidden="true"></i></div>
-                                <div class="">+012 345 6789</div>
+                                <div class="text-secondary font-weight-light">+012 345 6789</div>
                             </div>
                         </div>
-                        <div class="col-3 d-flex justify-content-end align-items-center justify-content-between">
-                            <div class="btn btn-outline-primary tx-primary bg-light"><i class="fab fa-facebook-f"></i>
+                        <div class="col-2 d-flex justify-content-end align-items-center justify-content-between">
+                            <div class="btn btn-outline-primary btn-sm tx-primary bg-light"><i
+                                    class="fab fa-facebook-f"></i>
                             </div>
-                            <div class="btn btn-outline-primary tx-primary bg-light"><i class="fab fa-twitter"></i>
+                            <div class="btn btn-outline-primary btn-sm tx-primary bg-light"><i
+                                    class="fab fa-twitter"></i>
                             </div>
-                            <div class="btn btn-outline-primary tx-primary bg-light"><i class="fab fa-linkedin"></i>
+                            <div class="btn btn-outline-primary btn-sm tx-primary bg-light"><i
+                                    class="fab fa-linkedin"></i>
                             </div>
-                            <div class="btn btn-outline-primary tx-primary bg-light"><i class="fab fa-instagram"></i>
+                            <div class="btn btn-outline-primary btn-sm tx-primary bg-light"><i
+                                    class="fab fa-instagram"></i>
                             </div>
-                            <div class="btn btn-outline-primary tx-primary bg-light"><i class="fab fa-youtube"></i>
+                            <div class="btn btn-outline-primary btn-sm tx-primary bg-light"><i
+                                    class="fab fa-youtube"></i>
                             </div>
                         </div>
                     </div>
@@ -79,7 +84,7 @@
                         <i class="fa fa-bars tx-primary justify-content-between" aria-hidden="true"></i>
                     </button>
 
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="collapse navbar-collapse py-3" id="navbarSupportedContent">
                         <ul class="navbar-nav  mr-auto">
                             <li class="nav-item active">
                                 <a class="nav-link  tx-primary  " href="#">Home <span
@@ -110,13 +115,18 @@
                                 <a class="nav-link  " href="#">Contact</a>
                             </li>
                         </ul>
-                        <a href="#" class="btn my-2 btn-primary py-3 px-4 font-weight-bolder"> Get A Quote</a>
+                        <a href="#" class="btn my-2 btn-primary py-2 px-4 font-weight-bolder"> Get A Quote</a>
                     </div>
                 </nav>
             </div>
         </div>
 
     </header>
+    <div class="btn-top">
+        <a class="btn btn-primary d-block d-md-inline-block scroll" href="#header"><i class="fa fa-angle-double-up"
+                aria-hidden="true"></i></a>
+    </div>
+
     <section id="carousel container-fluid">
 
         <div id="my-keen-slider" class="keen-slider text-white">
@@ -206,7 +216,7 @@
             </div>
             <div class="col-12 col-lg-9 ">
                 <div class="bg-slider d-block rounded-1"
-                    style=" background-color: #b49c73 !important; min-height:19vh ;">
+                    style=" background-color: #b49c73 !important; min-height:19vh ;" id="bg-slider-1">
                 </div>
                 <div id="my-keen-slider-2" class="keen-slider text-white">
                     <i class="arrow-2 arrow--left-2 fa fa-chevron-circle-left" aria-hidden="true"></i>
@@ -657,15 +667,15 @@
         </div>
     </section>
 
-    <footer class="bg-dark p-5">
-        <div class="row justify-content-center">
-            <div class="col-12 col-lg-3 d-block mx-4 bg-dark-light  px-5 py-3">
-                <div class="">
-                    <div class="d-flex">
-                        <div class="pr-4"><i class="tx-primary fa fa-map-marker fa-2x" aria-hidden="true"></i></div>
-                        <div class="">
-                            <div class="">
-                                <h3>Our Office</h3>
+    <footer class="bg-secundary pt-5 px-5">
+        <div class="row justify-content-between">
+            <div class="col-12 col-lg-4 ">
+                <div class="d-block bg-dark-light  p-3">
+                    <div class="d-flex justify-content-lg-center  mt-3">
+                        <div class="pr-4"><i class="tx-primary fa fa-2x fa-map-marker-alt" aria-hidden="true"></i></div>
+                        <div class="text-white">
+                            <div class="font-weight-bolder">
+                                <h5 class="font-weight-bolder">Our Office</h5>
                             </div>
                             <div class="">
                                 <p>123 Street, New York, USA</p>
@@ -674,14 +684,14 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-lg-3 d-block mx-4 bg-dark-light  px-5 py-3">
-                <div class="">
-                    <div class="d-flex">
+            <div class="col-12 col-lg-4">
+                <div class="d-block bg-dark-light  p-3">
+                    <div class="d-flex justify-content-lg-center  mt-3">
                         <div class="pr-4"><i class="tx-primary fa fa-envelope-open fa-2x" aria-hidden="true"></i></div>
-                        <div class="">
-                            <div class="">
-                                <h3>Email Us
-                                </h3>
+                        <div class="text-white  ">
+                            <div class="font-weight-bolder">
+                                <h5 class="font-weight-bolder">Email Us
+                                </h5>
                             </div>
                             <div class="">
                                 <p>info@example.com
@@ -692,14 +702,14 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-lg-3 d-block mx-4 bg-dark-light  px-5 py-3">
-                <div class="">
-                    <div class="d-flex">
+            <div class="col-12 col-lg-4">
+                <div class="d-block bg-dark-light  p-3">
+                    <div class="d-flex justify-content-lg-center  mt-3">
                         <div class="pr-4"><i class="tx-primary fa fa-phone fa-2x" aria-hidden="true"></i></div>
-                        <div class="">
-                            <div class="">
-                                <h3>
-                                    Call Us</h3>
+                        <div class="text-white  ">
+                            <div class="font-weight-bolder">
+                                <h5 class="font-weight-bolder">
+                                    Call Us</h5>
                             </div>
                             <div class="">
                                 <p>+012 345 6789</p>
@@ -709,7 +719,101 @@
                 </div>
             </div>
         </div>
+        <div class="row py-5">
+            <div class="col-12 col-lg-3">
+                <div class="">
+                    <h1 class="nav-brand tx-primary text-uppercase">justice</h1>
+                </div>
+                <div class=" text-white font-weight-light">
+                    <p>Volup amet magna clita tempor. Tempor sea eos vero ipsum. Lorem lorem sit sed elitr sed kasd et
+                    </p>
+                </div>
+                <div class="">
+                    <div class="btn btn-outline-light tx-dark"><i class="fab fa-twitter"></i>
+                    </div>
+                    <div class="btn btn-outline-light tx-dark ml-1"><i class="fab fa-facebook-f"></i>
+                    </div>
+                    <div class="btn btn-outline-light tx-dark ml-1"><i class=" fab fa-linkedin"></i>
+                    </div>
+                    <div class="btn btn-outline-light tx-dark ml-1"><i class=" fab fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-3 pt-2">
+                <div class="">
+                    <h4 class="tx-primary font-weight-bold">
+                        Popular Links
+                    </h4>
+                </div>
+                <div class="py-2">
+                    <a href="#" class="text-white"><i class="fa fa-chevron-right" aria-hidden="true"></i> Home </a>
+                </div>
+                <div class="pb-2">
+                    <a href="#" class="text-white"><i class="fa fa-chevron-right" aria-hidden="true"></i> Home </a>
+                </div>
+                <div class="pb-2">
+                    <a href="#" class="text-white"><i class="fa fa-chevron-right" aria-hidden="true"></i> Home </a>
+                </div>
+                <div class="pb-2">
+                    <a href="#" class="text-white"><i class="fa fa-chevron-right" aria-hidden="true"></i> Home </a>
+                </div>
+                <div class="pb-2">
+                    <a href="#" class="text-white"><i class="fa fa-chevron-right" aria-hidden="true"></i> Home </a>
+                </div>
+            </div>
+            <div class="col-12 col-lg-3 pt-2">
+                <div class="">
+                    <h4 class="tx-primary font-weight-bold">
+                        Quick Links
+                    </h4>
+                </div>
+                <div class="py-2">
+                    <a href="#" class="text-white"><i class="fa fa-chevron-right" aria-hidden="true"></i> Home </a>
+                </div>
+                <div class="pb-2">
+                    <a href="#" class="text-white"><i class="fa fa-chevron-right" aria-hidden="true"></i> Home </a>
+                </div>
+                <div class="pb-2">
+                    <a href="#" class="text-white"><i class="fa fa-chevron-right" aria-hidden="true"></i> Home </a>
+                </div>
+                <div class="pb-2">
+                    <a href="#" class="text-white"><i class="fa fa-chevron-right" aria-hidden="true"></i> Home </a>
+                </div>
+                <div class="pb-2">
+                    <a href="#" class="text-white"><i class="fa fa-chevron-right" aria-hidden="true"></i> Home </a>
+                </div>
+            </div>
+            <div class="col-12 col-lg-3 pt-2">
+                <div class="">
+                    <h4 class="tx-primary font-weight-bold">
+                        Newsletter
+                    </h4>
+                </div>
+                <div class="text-white">
+                    <p>Rebum labore lorem dolores kasd est, et ipsum amet et at kasd, ipsum sea tempor magna tempor.
+                        Accu kasd sed ea duo ipsum.</p>
+                </div>
+                <div class="">
+                    <div class="input-group ">
+                        <input type="text" class="form-control" placeholder="Your Email">
+                        <div class="input-group-append">
+                            <a class="btn btn-primary d-block d-md-inline-block px-4 py-3" href="#">Sign up</a>
+                        </div>
+                    </div>
 
+                </div>
+            </div>
+        </div>
+        <div class="bg-dark-light p-4">
+            <div class="row">
+                <div class="col-12 col-lg-9 text-white">© <span class="tx-primary">Your Site Name</span>. All
+                    Rights Reserved.</div>
+                <div class="col-12 col-lg-3 text-white">Designed by <span class="tx-primary">HTML
+                        Codex</span>
+                </div>
+            </div>
+
+        </div>
 
     </footer>
 
