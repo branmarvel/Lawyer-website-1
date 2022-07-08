@@ -49,6 +49,9 @@ html {
   background-color: #917d5b !important;
   border-color: #917d5b !important;
 }
+.btn-number {
+  border-radius: 100% !important;
+}
 
 .nav-link {
   font-weight: 600 !important;
